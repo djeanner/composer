@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClassicalComposerSchema",
+  "description": "A JSON schema for classical music composers, detailing their personal information, and a comprehensive list of their compositions with specific attributes like composition type and instruments.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "firstName": { "type": "string" },
+      "lastName": { "type": "string" },
+      "fullName": { "type": "string" },
+      "birth": { 
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "location": { "type": "string" },
+          "year": { "type": "integer" },
+          "country": { "type": "string" }
+        }
+      },
+      "death": { 
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "location": { "type": "string" },
+          "year": { "type": "integer" },
+          "country": { "type": "string" }
+        }
+      },
+      "compositions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "opus": { "type": "string" },
+            "compositionDate": { "type": "string", "format": "date" },
+            "locationOfComposition": { "type": "string" },
+            "yearOfComposition": { "type": "integer" },
+            "instruments": { 
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "type": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "composers": [
+    {
+      "firstName": "Franz",
+      "lastName": "Liszt",
+      "fullName": "Franz Liszt",
+"birth": {
+    "date": "1811-10-22",
+    "location": "Raiding, Hungary",
+    "year": 1811,
+    "country": "Hungary"
+  },
+  "death": {
+    "date": "1886-07-31",
+    "location": "Bayreuth, Germany",
+    "year": 1886,
+    "country": "Germany"
+  },
+  "compositions": [
+    {
+      "title": "Hungarian Rhapsodies",
+      "opus": "",
+      "compositionDate": "",
+      "yearOfComposition": 1846,
+      "instruments": ["piano"],
+      "type": "rhapsody"
+    },
+    {
+      "title": "Liebesträume",
+      "opus": "",
+      "compositionDate": "",
+      "yearOfComposition": 1850,
+      "instruments": ["piano"],
+      "type": "set of three solo piano works"
+    }
+  ]
+    },
+    {
+      "firstName": "Frédéric",
+      "lastName": "Chopin",
+      "fullName": "Frédéric Chopin",
+      "birth": {
+    "date": "1810-03-01",
+    "location": "Żelazowa Wola, Poland",
+    "year": 1810,
+    "country": "Poland"
+  },
+  "death": {
+    "date": "1849-10-17",
+    "location": "Paris, France",
+    "year": 1849,
+    "country": "France"
+  },
+  "compositions": [
+    {
+      "title": "Nocturnes, Op. 9",
+      "opus": "Op. 9",
+      "compositionDate": "",
+      "yearOfComposition": 1832,
+      "instruments": ["piano"],
+      "type": "nocturne"
+    },
+    {
+      "title": "Prelude in D-flat major, Op. 28, No. 15 ('Raindrop')",
+      "opus": "Op. 28, No. 15",
+      "compositionDate": "",
+      "yearOfComposition": 1839,
+      "instruments": ["piano"],
+      "type": "prelude"
+    }
+  ]
+    },
+    {
+      "firstName": "Franz",
+      "lastName": "Schubert",
+      "fullName": "Franz Schubert",
+"birth": {
+    "date": "1797-01-31",
+    "location": "Vienna, Austria",
+    "year": 1797,
+    "country": "Austria"
+  },
+  "death": {
+    "date": "1828-11-19",
+    "location": "Vienna, Austria",
+    "year": 1828,
+    "country": "Austria"
+  },
+  "compositions": [
+    {
+      "title": "Symphony No. 8 in B minor, D. 759 ('Unfinished')",
+      "opus": "D. 759",
+      "compositionDate": "1822",
+      "yearOfComposition": 1822,
+      "instruments": ["orchestra"],
+      "type": "symphony"
+    },
+    {
+      "title": "Ave Maria, D. 839",
+      "opus": "D. 839",
+      "compositionDate": "1825",
+      "yearOfComposition": 1825,
+      "instruments": ["voice", "piano"],
+      "type": "lied"
+    },
+    {
+      "title": "String Quartet No. 14 in D minor, D. 810 ('Death and the Maiden')",
+      "opus": "D. 810",
+      "compositionDate": "1824",
+      "yearOfComposition": 1824,
+      "instruments": ["string quartet"],
+      "type": "chamber music"
+    }
+  ]
+    }
+  ]
+}
+
