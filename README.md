@@ -10,5 +10,6 @@ The page for each composer was created using the python script.
 
 The results is a working website.
 
-[Link to Main Page2](https://djeanner.github.io/composer/)
+[Link to Main Page](https://djeanner.github.io/composer/)
 
+see the [composers.json](composers.json) file.
