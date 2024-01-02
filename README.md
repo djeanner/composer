@@ -10,3 +10,4 @@ The page for each composer was created using the python script.
 
 The results is a working website.
 
+[Link to Main Page](https://djeanner.github.io/classical-composers/)
